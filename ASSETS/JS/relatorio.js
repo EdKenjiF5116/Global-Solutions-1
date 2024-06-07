@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const trips = getTrips();
         const totalTrips = trips.length;
         const totalDuration = trips.reduce((sum, trip) => sum + parseInt(trip.duracao), 0);
+        
+        const captains = new Set(trips.map(trip => trip.nome));
+        const uniqueCaptains = captains.size;
 
         report.innerHTML = `
-            <p>Total de Viagens: ${totalTrips}</p>
+            <p>Total de Expedições: ${totalTrips}</p>
             <p>Duração Total: ${totalDuration} dias</p>
+            <p>Número de Organizadores Diferentes: ${uniqueCaptains}</p>
         `;
     }
 

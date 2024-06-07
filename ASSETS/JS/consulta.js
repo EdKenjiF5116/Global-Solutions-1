@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.textContent = `${trip.nome} - ${trip.data} - ${trip.local} - ${trip.duracao} dias - ${trip.descricao}`;
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Excluir';
+            deleteButton.textContent = 'Concluída';
             deleteButton.addEventListener('click', () => {
                 deleteTrip(index);
             });
