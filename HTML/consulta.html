@@ -1,40 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Viagens - Projeto de Limpeza dos Oceanos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Consulta de Viagens</title>
+    <link rel="stylesheet" href="../ASSETS/CSS/consulta.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto de Limpeza dos Oceanos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro de Viagens</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="consulta.html">Consulta</a></li>
+            <li><a href="relatorio.html">Relatório</a></li>
+        </ul>
+    </nav>
     <main>
-        <section>
-            <h2>Consulta de Viagens</h2>
-            <form>
-                <label for="consulta-nome">Nome do Responsável:</label>
-                <input type="text" id="consulta-nome" name="consulta-nome">
-                
-                <label for="consulta-data">Data da Viagem:</label>
-                <input type="date" id="consulta-data" name="consulta-data">
-                
-                <button type="submit">Consultar Viagens</button>
-            </form>
-            <!-- Resultados da consulta seriam exibidos aqui -->
-        </section>
+        <h1>Consulta de Viagens</h1>
+        <input type="text" id="search" placeholder="Buscar...">
+        <ul id="results"></ul>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Projeto de Limpeza dos Oceanos. Todos os direitos reservados.</p>
-    </footer>
+    <script src="../ASSETS/JS/consulta.js"></script>
 </body>
 </html>
