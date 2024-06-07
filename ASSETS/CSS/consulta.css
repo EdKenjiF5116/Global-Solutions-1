@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('../IMG/intro-1629568928.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -10;
 }
 
 nav {
@@ -33,6 +39,8 @@ main {
     width: 100%;
     padding: 0.5em;
     margin-top: 0.5em;
+    max-width: 600px;
+    margin: 1.78rem auto;
 }
 
 #results {

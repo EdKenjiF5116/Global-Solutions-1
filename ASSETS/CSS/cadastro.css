@@ -35,6 +35,11 @@ main {
     padding: 1em;
 }
 
+form{
+    max-width: 600px;
+    margin: 1.78rem auto;
+}
+
 form label {
     display: block;
     margin-top: 0.5em;
